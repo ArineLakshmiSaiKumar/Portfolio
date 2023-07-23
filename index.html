@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(10, 10, 64);
+            color:white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height:80px;
+            background-color: rgb(23, 23, 89);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            list-style:none;
+        }
+        nav ul li{
+            margin: 0 23px;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+        .leftSection{
+            font-size: 3rem;
+            width: 30%;
+            
+        }
+        .rightSection{
+            width:30%;
+        }
+        .rightSection img{
+            width: 80%;
+        }
+        .purple{
+            color: rgb(191, 128, 251);
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            font-size: 1.02rem;
+            color: rgb(212, 212, 151);
+        }
+        #element{
+            color: rgb(191, 128, 251);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 50vh;
+        }
+        .secondSection .box{
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 76px 0;
+            display: flex;
+        }
+        h1{
+            font-size: 1.9rem;
+        }
+        main hr{
+            border: 0;
+            background-color: violet;
+            height: 1px;
+            margin: 40px 80px;
+        }
+        .secondSection .vertical{
+            background-color: white;
+            height: 93px;
+            width: 1px;
+            margin : 0 100px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 45px;
+            width:150px;
+            font-size: 14px;
+        }
+        .vertical-desc{
+            position: relative;
+            color: gray;
+            font-size: 9px;
+            top: 50px;
+            width: 150px;
+
+        }
+        .img-top{
+            width: 23px;
+            position: relative;
+            top: -43px;
+            left: -9px;
+        }
+        footer{
+            background-color: rgb(42, 42, 57);
+        }
+        .footer{
+            
+            display: flex;
+            height: 233px;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer > div{
+            width:200px
+        }
+        footer .footer-text-center{
+            text-align: center;
+            padding: 12px 0;
+        }
+        .btn{
+            padding: 12px;
+            background-color: rgb(100, 59, 203);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .about-img{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .about .about-img img{
+            width: 300px;
+        }
+        .about-img div{
+            width: 700px;
+            margin: 30px 0;
+            display: relative;
+            right: 300px;
+        }
+        .about-img div p{
+            margin:30px 0;
+        }
+        .items{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin:40px
+        }
+        .services{
+            height: 50vh;
+        }
+        .items div{
+            width: 400px;
+            padding: 7px;
+            background-color: rgb(17, 17, 104);
+            border-radius: 20px;
+        }
+        .items div p{
+            height: 30vh;
+            
+            
+        }
+        .pink{
+            color: rgb(164, 82, 240);
+        }
+        .contact h1{
+
+        }
+        .contact form{
+            max-width: 60rem;
+            margin: 1rem auto;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .contact form .input-box{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .contact form .input-box input,.contact form .input-box text-area{
+            width: 40%;
+            padding: 0.5rem;
+            font-size: 1.6rem;
+            color: white;
+            border-radius: 0.8rem;
+            margin: .7rem 0;
+
+        }
+        .second{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+        }
+        footer div{
+            height: 100px;
+            display: relative;
+            top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sai's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi My Name is <span class="purple">Sai</span>
+                <div>and I am Passinate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="pro.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section id="about" class="about">
+           
+            <div class="about-img">
+                <img src="abt-img.png" alt="">
+                <div>
+                    <h1>About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit culpa sunt reiciendis ipsa voluptate. Minus, repellat soluta! Quae eum cupiditate quaerat aperiam? Asperiores veniam voluptatum velit nobis exercitationem animi quas!</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img  class="img-top" src="stu.png" alt="">
+                    <div class="vertical-title">Student from 2004-2022</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsa aut eos illo quisquam, incidunt libero dolore itaque delectus quos fuga enim!</div>
+                    
+                </div>
+                <div class="vertical">
+                    <img  class="img-top" src="stu.png" alt="">
+                    <div class="vertical-title">Student from 2004-2022</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsa aut eos illo quisquam, incidunt libero dolore itaque delectus quos fuga enim!</div>
+                    
+                </div>
+                <div class="vertical">
+                    <img  class="img-top" src="stu.png" alt="">
+                    <div class="vertical-title">Student from 2004-2022</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsa aut eos illo quisquam, incidunt libero dolore itaque delectus quos fuga enim!</div>
+                    
+                </div>
+                <div class="vertical">
+                    <img  class="img-top" src="stu.png" alt="">
+                    <div class="vertical-title">Student from 2004-2022</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsa aut eos illo quisquam, incidunt libero dolore itaque delectus quos fuga enim!</div>
+                    
+                </div>
+                <div class="vertical">
+                    <img  class="img-top" src="stu.png" alt="">
+                    <div class="vertical-title">Student from 2004-2022</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsa aut eos illo quisquam, incidunt libero dolore itaque delectus quos fuga enim!</div>
+                    
+                </div>
+                <div class="vertical">
+                    <img  class="img-top" src="stu.png" alt="">
+                    <div class="vertical-title">Student from 2004-2022</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere ipsa aut eos illo quisquam, incidunt libero dolore itaque delectus quos fuga enim!</div>
+                    
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="services">
+            <h1 style="margin:0 123px;">Our <span class="pink">Services</span></h1>
+            <div class="items">
+                <div class="box1" style="text-align: center;">
+                    <h3 style="padding: 12px;">Web Devolopment</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus aut deserunt, ex molestiae quod, inventore earum voluptas dolor, maiores totam odio aliquam recusandae consectetur repudiandae neque facere provident sed saepe.
+                    </p>
+                </div>
+                <div class="box2" style="text-align: center;">
+                    <h3 style="padding: 12px;">App Devolopment</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores beatae fuga rerum sit nemo quidem dolores obcaecati cumque dolore sequi, assumenda in ex temporibus magni alias at impedit reiciendis sint.
+                    </p>
+                </div>
+                <div class="box3" style="text-align: center;">
+                    <h3 style="padding: 12px;">Compititive Coding</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores beatae fuga rerum sit nemo quidem dolores obcaecati cumque dolore sequi, assumenda in ex temporibus magni alias at impedit reiciendis sint.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- <section class="contact">
+            <h1 class="heading" style="margin-bottom: 3rem;">Contact <span>Me</span></h1>
+            
+            <form action="">
+                
+                    <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" ></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            
+        </section> -->
+        <!-- <hr> -->
+    </main>
+    <footer>
+            <div >
+                <ul style= "padding: 30px;" class="second">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    
+                </ul>
+            
+            
+            
+            </div>
+        <div class="footer-text-center">www.saisportfolio.com | All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Devoloper','Programmer'],
+      typeSpeed: 50,
+    });
+  </script>
+
+</body>
+</html>
